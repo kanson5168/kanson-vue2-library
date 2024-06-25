@@ -1,0 +1,1 @@
+declare module "kanson-vue2-library"
