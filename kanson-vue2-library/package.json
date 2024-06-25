@@ -1,6 +1,6 @@
 {
   "name": "kanson-vue2-library",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "庞康成个人组件库",
   "main": "dist/index.umd.js",
   "keywords": [
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "kanson-vue2-library": "^0.1.0",
+    "kanson-vue2-library": "^0.1.2",
     "vue": "^2.6.14"
   },
   "devDependencies": {

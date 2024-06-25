@@ -1,7 +1,7 @@
 <template>
   <div class="my-card" :style="width ? { width: width + 'px' } : {}">
     <div class="my-card-img" :style="imgHeight ? { height: imgHeight + 'px' } : {}">
-      <img id="img" :src="imgSrc ? imgSrc : 'detail.png'" alt="img" :style="{ objectFit: objectFit }" />
+      <img id="img" :src="imgSrc ? imgSrc : 'detail.png'" :style="{ objectFit: objectFit }" />
     </div>
     <div class="my-card-summary" v-if="summary">{{ summary }}</div>
     <div class="my-card-summary" v-else>
