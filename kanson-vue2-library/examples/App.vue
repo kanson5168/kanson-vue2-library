@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <DataVisual></DataVisual>
     <IdentityCard></IdentityCard>
   </div>
 </template>

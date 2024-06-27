@@ -1,3 +1,4 @@
+const { name } = require('file-loader')
 const glob = require('glob') //node自带的，可以遍历文件夹
 const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
@@ -42,6 +43,18 @@ module.exports = {
           },
         ]
       },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              name: 'img/[name].[hash:8].[ext]'
+            },
+          },
+        ],
+      }
     ]
   },
 }
