@@ -1,0 +1,66 @@
+{
+  "name": "kanson-vue2-library",
+  "version": "0.2.5",
+  "description": "庞康成个人组件库",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "kanson-vue2-library",
+    "IdentityCard"
+  ],
+  "author": "PKC",
+  "files": [
+    "dist",
+    "components"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./webpack.component.js",
+    "build:css": "npx gulp sass"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "kanson-vue2-library": "^0.1.5",
+    "vue": "^2.6.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "file-loader": "^6.2.0",
+    "gulp": "^5.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.72.0",
+    "sass-loader": "^14.1.1",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.8",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.14",
+    "webpack-cli": "^5.1.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
